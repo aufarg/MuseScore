@@ -3117,6 +3117,7 @@ void ScoreView::startNoteEntry()
       is.setRest(false);
       is.setNoteEntryMode(true);
       adjustCanvasPosition(el, false);
+      setEditElement(nullptr);
 
       getAction("pad-rest")->setChecked(false);
       setMouseTracking(true);
